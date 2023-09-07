@@ -2,9 +2,10 @@ function CarInfo (props) {
     console.log(props);
     return (
         <div>
-            <p>Hämtad komponent från CarInfo</p>
+            <p>CarInfo:</p>
             <p>
-                {props.brand} {props.model}<br/>
+                <img src={props.bostader} alt={props.brand} className="annons" width="100" />
+                {props.brand} {props.model} {props.bostader}<br/>
                 Årsmodell: {props.modelYear}
             </p>
         </div>

@@ -1,7 +1,12 @@
-function CarInfo () {
+function CarInfo (props) {
+    console.log(props);
     return (
         <div>
-            <h1>Hej från CarInfo</h1>
+            <p>Hämtad komponent från CarInfo</p>
+            <p>
+                {props.brand} {props.model}<br/>
+                Årsmodell: {props.modelYear}
+            </p>
         </div>
     )
 }

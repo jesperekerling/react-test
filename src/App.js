@@ -24,37 +24,38 @@ function App() {
           <img src={blocketLogo} alt="logo" />
         </a>
         <nav>
-            <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="goteborg.html">Annonser</a></li>
-                <li class="hogersida">Varukorg</li>
-                <li class="hogersida"><button>Lägg till annons</button></li>
-            </ul>
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="goteborg.html">Annonser</a></li>
+            <li class="hogersida">Varukorg</li>
+            <li class="hogersida"><button>Lägg till annons</button></li>
+          </ul>
         </nav>
       </header>
       <main>
       <h1>Välj din region</h1>
         <ul class="list-links">
-            <li><a href="goteborg.html">Göteborg</a></li>
-            <li><a href="goteborg.html">Malmö</a></li>
-            <li><a href="goteborg.html">Stockholm</a></li>
+          <li><a href="goteborg.html">Göteborg</a></li>
+          <li><a href="goteborg.html">Malmö</a></li>
+          <li><a href="goteborg.html">Stockholm</a></li>
         </ul>
         <h2>Eller välj kategori</h2>
         <ul class="list-links categories">
-            <li>
-                <a href="index.html">
-                    Fordon
-                </a>
-            </li>
-            <li>
-                <a href="index.html"> 
-                    Bostäder
-                </a>
-            </li>
-            <li><a href="index.html">
-                Leksaker
-                </a>
-            </li>
+          <li>
+            <a href="index.html">
+              Fordon
+            </a>
+          </li>
+          <li>
+            <a href="index.html"> 
+              Bostäder
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              Leksaker
+            </a>
+          </li>
         </ul>
 
         <h2>Annonser</h2>

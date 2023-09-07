@@ -55,7 +55,7 @@ function App() {
             </li>
         </ul>
       <div class="annonser">  
-      <AdInfo
+        <AdInfo
           type={type}
           model={model}
           modelYear={modelYear}

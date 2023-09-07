@@ -5,9 +5,10 @@ import User from './User';
 
 function App() {
   const type = "Fordon";
-  const modelYear = 2000;
+  const price = 2000;
   const model = "A3";
-  const svg = "Bildurl";
+  const description = "Bildurl";
+  const date = "";
   const currentMileage = 11000;
   const city ="";
   const imageUrl = "https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80";
@@ -64,26 +65,32 @@ function App() {
           imageUrl={imageUrl}
           type={type}
           city={city}
-          modelYear={modelYear}
-          svg={svg}
+          price={price}
+          description={description}
+        />
+        <AdInfo
+          imageUrl="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"
+          type="Leksaker"
+          city="Göteborg"
+          price="199"
+          description="Rolig leksak"
+          date="2023-09-10"
+        />
+        <AdInfo
+          imageUrl="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"
+          type="Fordon"
+          city="Stockholm"
+          price="599"
+          description="Finaste bilen"
+          date="2023-09-10"
         />
         <AdInfo
           imageUrl="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"
           type="Fordon"
           city="Göteborg"
-          modelYear="2006"
-        />
-        <AdInfo
-          imageUrl="./svg/bostader.svg"
-          type="Bostäder"
-          city="Stockholm"
-          modelYear="2022"
-        />
-        <AdInfo
-          imageUrl="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"
-          type="Leksaker"
-          city="Malmö"
-          modelYear="2022"
+          price="199"
+          description="Köp fin produkt"
+          date="2023-09-10"
         />
       </div>
         <p>

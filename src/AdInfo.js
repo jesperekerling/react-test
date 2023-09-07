@@ -3,16 +3,15 @@ function AdInfo (props) {
     return (
         <article className="annons">
             <div className="annonsbild">
-                <img src={props.imageUrl} alt={props.type} width="100" />   
+                <img src={props.imageUrl} alt={props.type} />   
             </div>
             <div className="annonsinfo">
                 <h2>{props.type}</h2>
+                <p>
                 <span>{props.city}</span>
-                <span>{props.price}</span>
+                <span>{props.price} kr</span></p>
                 <p>{props.description}</p>
                 <button>Köp</button>
-                {props.city} {props.bostader}<br/>
-                Årsmodell: {props.modelYear}
             </div>
         </article>
         

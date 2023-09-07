@@ -9,11 +9,13 @@ function User(props) {
   }, [])
   return (
     <div>
-      <h1>Users</h1>
+      <h1>Test av fetch (Users)</h1>
       <div>
         {userData.map(user => (
           <div key={user.id}>
-            <p>{user.name} {user.email} {user.phone}</p>
+            <h3>{user.name}</h3>
+            <span>Email: {user.email}</span><br/>
+            <span>Telefonnummer: {user.phone}</span>
             {console.log(user)}
           </div>
         ))}

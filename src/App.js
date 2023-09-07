@@ -1,7 +1,7 @@
 import bostader from './svg/bostader.svg';
 import blocketLogo from './svg/blocket.svg';
-//import './App.css';
 import AdInfo from './AdInfo'
+import User from './User';
 
 function App() {
   const type = "Fordon";
@@ -9,6 +9,8 @@ function App() {
   const model = "A3";
   const svg = "Bildurl";
   const currentMileage = 11000;
+  const city ="";
+  const imageUrl = "https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80";
   //const bostader = "src/svg/bostader.svg";
   //const bigServiceMileage = 10000;
 
@@ -54,31 +56,33 @@ function App() {
                 </a>
             </li>
         </ul>
+
+        <h2>Annonser</h2>
       <div class="annonser">  
         <AdInfo
+          imageUrl={imageUrl}
           type={type}
-          model={model}
+          city={city}
           modelYear={modelYear}
           svg={svg}
-          bostader={bostader}
         />
         <AdInfo
+          imageUrl="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"
           type="Fordon"
-          model="V70"
+          city="Göteborg"
           modelYear="2006"
-          bostader={bostader}
         />
         <AdInfo
+          imageUrl="./svg/bostader.svg"
           type="Bostäder"
-          model="Rapid"
+          city="Stockholm"
           modelYear="2022"
-          svg={bostader}
         />
         <AdInfo
+          imageUrl="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"
           type="Leksaker"
-          model="Rapid"
+          city="Malmö"
           modelYear="2022"
-          svg="src/svg/leksaker.svg"
         />
       </div>
         <p>
@@ -93,6 +97,9 @@ function App() {
           Learn React
         </a>
       </main>
+      <div>
+        <User />
+      </div>
     </div>
   );
 }

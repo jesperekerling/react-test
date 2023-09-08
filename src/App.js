@@ -1,4 +1,4 @@
-import bostader from './svg/bostader.svg';
+//import bostader from './svg/bostader.svg';
 import blocketLogo from './svg/blocket.svg';
 import AdInfo from './AdInfo'
 import User from './User';
@@ -67,6 +67,7 @@ function App() {
           city={city}
           price={price}
           description={description}
+          date={date}
         />
         <AdInfo
           imageUrl="https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3270&q=80"

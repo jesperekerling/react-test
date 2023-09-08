@@ -11,6 +11,7 @@ function AdInfo (props) {
                 <span>{props.city}</span>
                 <span>{props.price} kr</span></p>
                 <p>{props.description}</p>
+                <p>{props.date}</p>
                 <button>Köp</button>
             </div>
         </article>
